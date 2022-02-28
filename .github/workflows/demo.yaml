@@ -16,12 +16,3 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     -run: docker build . -t frlregistry.azurecr.io/demo
     -run: docker push frlregistry.azurecr.io/demo
-
-
-
-    
-
-
-
-
-
