@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "helloworld !!!"
-    
+    - uses: actions/ckeckout@main
+    - run: ls
+
