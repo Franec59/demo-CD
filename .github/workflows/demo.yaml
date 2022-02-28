@@ -11,7 +11,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/docker-login@v1
       with: 
-        login-server: frl-kubernestes-dns-c30a276d.hcp.uksouth.azmk8s.io
+        login-server: frlregistry.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     -run: docker build . -t frlregistry.azurecr.io/demo
