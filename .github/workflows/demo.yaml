@@ -14,8 +14,8 @@ jobs:
         login-server: frl-kubernestes-dns-c30a276d.hcp.uksouth.azmk8s.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
-    -run: docker build . -t frl-kubernestes-dns-c30a276d.hcp.uksouth.azmk8s.io/demo
-    -run: docker push frl-kubernestes-dns-c30a276d.hcp.uksouth.azmk8s.io/demo
+    -run: docker build . -t frlregistry.azurecr.io/demo
+    -run: docker push frlregistry.azurecr.io/demo
 
 
 
